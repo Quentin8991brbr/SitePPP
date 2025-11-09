@@ -1,0 +1,124 @@
+
+:root {
+    --couleur-principale: #007bff; /* Bleu vif (boutons, bordures) */
+    --couleur-sombre: #003366;    /* Bleu marine (Header, Navbar) */
+    --couleur-claire: #f0f8ff;    /* Bleu très clair (Fond de page) */
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-top: 50px;
+    background-color: var(--couleur-claire); /* Nouveau fond bleu clair */
+    color: #333;
+}
+
+.navbar {
+    background-color: var(--couleur-sombre); /* Bleu marine */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-title {
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 0 15px;
+}
+
+
+.navbar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #0056b3; 
+}
+
+
+.header {
+    background-color: var(--couleur-sombre); 
+    color: white;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.profil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.last-section {
+    border-bottom: none;
+}
+
+.section h2 {
+    color: var(--couleur-principale); 
+    border-left: 5px solid var(--couleur-principale); 
+    padding-left: 10px;
+}
+
+
+#btn-details {
+    background-color: var(--couleur-principale); 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+
+
+.footer {
+    background-color: #343a40; 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+.footer-links a, .footer-links span {
+    color: #cccccc; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: var(--couleur-principale); 
+    text-decoration: underline;
+}
